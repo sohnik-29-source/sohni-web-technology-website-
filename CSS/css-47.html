@@ -1,0 +1,85 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Dashboard</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .dashboard {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            padding: 30px;
+            background: #101d31;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card h2 {
+            color: #22d3ee;
+        }
+
+        @media (max-width: 700px) {
+            .dashboard {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Dashboard</h1>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>150</h2>
+            <p>Students</p>
+        </div>
+
+        <div class="card">
+            <h2>25</h2>
+            <p>Courses</p>
+        </div>
+
+        <div class="card">
+            <h2>85%</h2>
+            <p>Completion</p>
+        </div>
+
+        <div class="card">
+            <h2>12</h2>
+            <p>Projects</p>
+        </div>
+
+        <div class="card">
+            <h2>8</h2>
+            <p>Teachers</p>
+        </div>
+
+        <div class="card">
+            <h2>20</h2>
+            <p>Departments</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,97 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News Blog</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background: #101d31;
+            padding: 25px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #22d3ee;
+        }
+
+        .blog {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .article,
+        .sidebar {
+            background: #101d31;
+            padding: 30px;
+            border-radius: 12px;
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .article h2 {
+            color: #22d3ee;
+        }
+
+        @media (max-width: 700px) {
+            .blog {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Daily News</h1>
+    </header>
+
+    <div class="blog">
+
+        <main>
+
+            <article class="article">
+                <h2>Technology News</h2>
+                <p>
+                    Latest developments in technology and innovation.
+                </p>
+            </article>
+
+            <article class="article">
+                <h2>Education News</h2>
+                <p>
+                    New trends and opportunities in education.
+                </p>
+            </article>
+
+        </main>
+
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <p>Technology</p>
+            <p>Education</p>
+            <p>Business</p>
+            <p>Travel</p>
+        </aside>
+
+    </div>
+
+</body>
+
+</html>
+```

@@ -1,0 +1,93 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact Form</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 50px 20px;
+            background: #07111f;
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 35px;
+            background: #101d31;
+            border-radius: 15px;
+        }
+
+        h1 {
+            color: #22d3ee;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            color: white;
+            margin-top: 15px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            margin-top: 8px;
+            box-sizing: border-box;
+        }
+
+        textarea {
+            height: 150px;
+            resize: vertical;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            margin-top: 20px;
+            border: none;
+            background: #22d3ee;
+            cursor: pointer;
+        }
+
+        @media (max-width: 500px) {
+            .form-container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h1>Contact Us</h1>
+
+        <form>
+
+            <label>Name</label>
+            <input type="text" placeholder="Enter your name">
+
+            <label>Email</label>
+            <input type="email" placeholder="Enter your email">
+
+            <label>Message</label>
+            <textarea placeholder="Enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>
+```

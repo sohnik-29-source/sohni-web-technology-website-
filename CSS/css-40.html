@@ -1,0 +1,50 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Hover Effect</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            background: #07111f;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .image-container {
+            width: 400px;
+            max-width: 90%;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .image-container img {
+            width: 100%;
+            display: block;
+            transition: transform 0.5s;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.15);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 style="color: white;">Image Hover Effect</h1>
+
+    <div class="image-container">
+        <img src="https://picsum.photos/600/400" alt="Hover Image">
+    </div>
+
+</body>
+
+</html>
+```

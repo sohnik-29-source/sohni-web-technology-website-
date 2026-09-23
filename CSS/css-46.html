@@ -1,0 +1,71 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Cards</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #07111f;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+        }
+
+        .cards {
+            display: flex;
+            gap: 25px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            width: 250px;
+            padding: 25px;
+            background: #101d31;
+            color: white;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .card h2 {
+            color: #22d3ee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Card Layout</h1>
+
+    <div class="cards">
+
+        <div class="card">
+            <h2>HTML</h2>
+            <p>Learn webpage structure.</p>
+        </div>
+
+        <div class="card">
+            <h2>CSS</h2>
+            <p>Learn webpage styling.</p>
+        </div>
+
+        <div class="card">
+            <h2>JavaScript</h2>
+            <p>Learn webpage interaction.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```

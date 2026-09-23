@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Experiment 15 - Personal Portfolio</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            min-height: 90vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            text-align: center;
+            padding: 40px;
+        }
+
+        .portfolio {
+            max-width: 800px;
+        }
+
+        .profile {
+            width: 130px;
+            height: 130px;
+
+            border-radius: 50%;
+
+            margin-bottom: 25px;
+
+            border: 4px solid #7c3aed;
+            object-fit: cover;
+        }
+
+        h1 {
+            font-size: 55px;
+            margin-bottom: 10px;
+
+            background: linear-gradient(
+                135deg,
+                #a78bfa,
+                #22d3ee
+            );
+
+            -webkit-text-fill-color: transparent;
+        }
+
+        h2 {
+            color: #67e8f9;
+        }
+
+        p {
+            color: #94a3b8;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+
+        .skill {
+            padding: 10px 18px;
+            background: #101d31;
+            border: 1px solid #334155;
+            border-radius: 30px;
+            color: #cbd5e1;
+        }
+
+        .contact {
+            display: inline-block;
+            padding: 14px 28px;
+
+            background: #7c3aed;
+            color: white;
+
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        .contact:hover {
+            background: #0891b2;
+        }
+
+        @media (max-width: 600px) {
+
+            h1 {
+                font-size: 40px;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="portfolio">
+
+        <img
+            class="profile"
+            src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+            alt="Profile">
+
+        <h1>My Portfolio</h1>
+
+        <h2>Web Developer</h2>
+
+        <p>
+            Hello! I am a passionate student interested in
+            web development and modern technologies.
+            I enjoy creating clean and user-friendly websites.
+        </p>
+
+        <div class="skills">
+
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">Bootstrap</div>
+
+        </div>
+
+        <a href="mailto:example@email.com" class="contact">
+            Contact Me
+        </a>
+
+    </div>
+
+</header>
+
+</body>
+</html>

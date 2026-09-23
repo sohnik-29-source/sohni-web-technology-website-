@@ -1,0 +1,68 @@
+```html id="1q6j8a"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Alignment</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            height: 300px;
+            justify-content: space-around;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .box {
+            width: 120px;
+            height: 120px;
+            background: #22d3ee;
+            color: #07111f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box1 {
+            order: 3;
+        }
+
+        .box2 {
+            order: 1;
+        }
+
+        .box3 {
+            order: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Flexbox Alignment and Ordering</h1>
+
+    <div class="container">
+
+        <div class="box box1">Box 1</div>
+
+        <div class="box box2">Box 2</div>
+
+        <div class="box box3">Box 3</div>
+
+    </div>
+
+</body>
+
+</html>
+```

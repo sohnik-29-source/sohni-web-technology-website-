@@ -1,0 +1,76 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sticky Header</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            position: sticky;
+            top: 0;
+            background: #101d31;
+            padding: 20px;
+            text-align: center;
+            z-index: 10;
+        }
+
+        header h1 {
+            color: #22d3ee;
+        }
+
+        .content {
+            padding: 50px;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Sticky Header</h1>
+        <p>Scroll down to see the header remain at the top.</p>
+    </header>
+
+    <div class="content">
+
+        <h2>Content Section</h2>
+
+        <p>
+            This webpage demonstrates the CSS sticky position.
+            Scroll down the page and the header will remain visible.
+        </p>
+
+        <p>
+            CSS position: sticky allows an element to remain in
+            its normal position until a specified scroll position.
+        </p>
+
+        <p>
+            This is additional content for demonstrating scrolling.
+        </p>
+
+        <p>
+            Keep scrolling to observe the sticky header.
+        </p>
+
+        <p>
+            The header stays at the top of the webpage.
+        </p>
+
+    </div>
+
+</body>
+
+</html>
+```

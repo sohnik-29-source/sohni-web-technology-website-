@@ -1,0 +1,114 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Homepage</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        header {
+            background: #101d31;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #22d3ee;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80px 20px;
+        }
+
+        .hero h2 {
+            font-size: 40px;
+        }
+
+        .sections {
+            display: flex;
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .card {
+            flex: 1;
+            background: #101d31;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        @media (max-width: 700px) {
+            .sections {
+                flex-direction: column;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+
+            .hero h2 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>ABC College of Engineering</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Departments</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2>Welcome to ABC College</h2>
+        <p>Education • Innovation • Excellence</p>
+    </section>
+
+    <section class="sections">
+
+        <div class="card">
+            <h2>Courses</h2>
+            <p>Engineering and Technology programs.</p>
+        </div>
+
+        <div class="card">
+            <h2>Campus</h2>
+            <p>Modern infrastructure and facilities.</p>
+        </div>
+
+        <div class="card">
+            <h2>Students</h2>
+            <p>Learn, innovate and grow.</p>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
+```

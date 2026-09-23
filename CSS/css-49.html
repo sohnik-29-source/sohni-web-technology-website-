@@ -1,0 +1,70 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .columns {
+            display: flex;
+            gap: 20px;
+        }
+
+        .column {
+            flex: 1;
+            padding: 40px;
+            background: #101d31;
+            text-align: center;
+            border-radius: 15px;
+        }
+
+        .column h2 {
+            color: #22d3ee;
+        }
+
+        @media (max-width: 700px) {
+            .columns {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Three-Column Flexbox Layout</h1>
+
+    <div class="columns">
+
+        <div class="column">
+            <h2>Column 1</h2>
+            <p>First column content.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 2</h2>
+            <p>Second column content.</p>
+        </div>
+
+        <div class="column">
+            <h2>Column 3</h2>
+            <p>Third column content.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```

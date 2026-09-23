@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inline Internal External CSS</title>
+
+    <!-- Internal CSS -->
+    <style>
+        body {
+            background: #07111f;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+            padding: 50px;
+        }
+
+        .internal {
+            color: #a78bfa;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="external.css">
+</head>
+
+<body>
+
+    <!-- Inline CSS -->
+    <h1 style="color: #f472b6;">Inline CSS</h1>
+
+    <!-- Internal CSS -->
+    <h2 class="internal">Internal CSS</h2>
+
+    <!-- External CSS -->
+    <h3 class="external">External CSS</h3>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Experiment 9 - HTML5 Inputs</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #07111f;
+            color: white;
+            padding: 50px;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 40px;
+            background: #101d31;
+            border-radius: 20px;
+        }
+
+        h1 {
+            color: #67e8f9;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin-top: 8px;
+            background: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            color: white;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 25px;
+            padding: 14px;
+            background: #7c3aed;
+            border: none;
+            color: white;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>HTML5 Input Types</h1>
+
+    <form>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter email">
+
+        <label>Date</label>
+        <input type="date">
+
+        <label>Number</label>
+        <input type="number" min="1" max="100">
+
+        <label>Password</label>
+        <input type="password" placeholder="Enter password">
+
+        <button type="submit">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

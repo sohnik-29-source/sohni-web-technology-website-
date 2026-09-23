@@ -1,0 +1,72 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Fit and Position</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 40px;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            width: 300px;
+            height: 200px;
+            border: 2px solid #22d3ee;
+        }
+
+        .cover {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        .contain {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: top;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Object Fit and Object Position</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <img class="cover"
+                 src="https://picsum.photos/500/300?1"
+                 alt="Cover">
+        </div>
+
+        <div class="box">
+            <img class="contain"
+                 src="https://picsum.photos/500/300?2"
+                 alt="Contain">
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```

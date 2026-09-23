@@ -1,0 +1,75 @@
+```html id="j6o4qf"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile First</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .box {
+            background: #101d31;
+            padding: 30px;
+            text-align: center;
+            border-radius: 12px;
+        }
+
+        /* Larger screens */
+        @media (min-width: 700px) {
+            body {
+                padding: 50px;
+            }
+
+            .container {
+                flex-direction: row;
+            }
+
+            .box {
+                flex: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Mobile-First Responsive Webpage</h1>
+
+    <div class="container">
+
+        <div class="box">
+            <h2>HTML</h2>
+            <p>Web structure.</p>
+        </div>
+
+        <div class="box">
+            <h2>CSS</h2>
+            <p>Web styling.</p>
+        </div>
+
+        <div class="box">
+            <h2>JavaScript</h2>
+            <p>Web interaction.</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+```

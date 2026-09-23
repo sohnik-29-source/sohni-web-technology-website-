@@ -1,0 +1,83 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+
+    <style>
+        body {
+            margin: 0;
+            background: #07111f;
+            font-family: Arial, sans-serif;
+        }
+
+        nav {
+            background: #101d31;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+        }
+
+        .dropdown {
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background: white;
+            min-width: 160px;
+            margin-top: 15px;
+        }
+
+        .dropdown-content a {
+            display: block;
+            color: #07111f;
+            padding: 12px;
+            margin: 0;
+        }
+
+        .dropdown-content a:hover {
+            background: #22d3ee;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+
+        <a href="#">Home</a>
+
+        <div class="dropdown">
+
+            <a href="#">Courses ▼</a>
+
+            <div class="dropdown-content">
+                <a href="#">HTML</a>
+                <a href="#">CSS</a>
+                <a href="#">JavaScript</a>
+            </div>
+
+        </div>
+
+        <a href="#">Contact</a>
+
+    </nav>
+
+</body>
+
+</html>
+```

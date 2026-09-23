@@ -1,0 +1,75 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 50px;
+            background: #07111f;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .shape {
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #22d3ee;
+            color: #07111f;
+            font-weight: bold;
+        }
+
+        .rounded {
+            border-radius: 20px;
+        }
+
+        .circle {
+            border-radius: 50%;
+        }
+
+        .pill {
+            border-radius: 75px;
+        }
+
+        .custom {
+            border-radius: 10px 50px 10px 50px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Border Radius Shapes</h1>
+
+    <div class="container">
+
+        <div class="shape rounded">Rounded</div>
+
+        <div class="shape circle">Circle</div>
+
+        <div class="shape pill">Pill</div>
+
+        <div class="shape custom">Custom</div>
+
+    </div>
+
+</body>
+
+</html>
+```

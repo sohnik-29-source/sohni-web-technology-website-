@@ -1,0 +1,99 @@
+```html id="4g9z3x"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Template Areas</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+
+            grid-template-columns: 220px 1fr;
+            grid-template-rows: 80px 1fr 70px;
+            min-height: 100vh;
+        }
+
+        .header {
+            grid-area: header;
+            background: #101d31;
+            padding: 25px;
+            color: #22d3ee;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background: #0b1728;
+            padding: 25px;
+        }
+
+        .main {
+            grid-area: main;
+            padding: 40px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background: #101d31;
+            padding: 25px;
+            text-align: center;
+        }
+
+        @media (max-width: 600px) {
+            .layout {
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "sidebar"
+                    "footer";
+
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="layout">
+
+        <header class="header">
+            <h2>WebLab</h2>
+        </header>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Home</p>
+            <p>Courses</p>
+            <p>Projects</p>
+        </aside>
+
+        <main class="main">
+            <h1>CSS Grid Template Areas</h1>
+            <p>This section demonstrates named grid areas.</p>
+        </main>
+
+        <footer class="footer">
+            Footer
+        </footer>
+
+    </div>
+
+</body>
+
+</html>
+```

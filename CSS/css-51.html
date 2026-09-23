@@ -1,0 +1,87 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fixed Sidebar</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #07111f;
+            color: white;
+        }
+
+        .sidebar {
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 220px;
+            height: 100vh;
+            background: #101d31;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        .sidebar h2 {
+            color: #22d3ee;
+        }
+
+        .sidebar a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            padding: 15px 0;
+        }
+
+        .content {
+            margin-left: 220px;
+            padding: 50px;
+            line-height: 2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar">
+        <h2>WebLab</h2>
+
+        <a href="#">Home</a>
+        <a href="#">Courses</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <div class="content">
+        <h1>Fixed Sidebar</h1>
+
+        <p>
+            This sidebar uses position: fixed.
+            It remains in the same position while the page is scrolled.
+        </p>
+
+        <p>
+            CSS fixed positioning keeps the sidebar attached to the viewport.
+        </p>
+
+        <p>
+            Scroll the page to observe the fixed sidebar.
+        </p>
+
+        <p>
+            This is additional content for scrolling.
+        </p>
+
+        <p>
+            The sidebar remains visible while scrolling.
+        </p>
+    </div>
+
+</body>
+
+</html>
+```

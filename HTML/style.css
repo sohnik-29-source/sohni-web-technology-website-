@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #07111f;
+    color: white;
+    padding: 60px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 50px;
+    background: #101d31;
+    border-radius: 20px;
+}
+
+.external {
+    margin-top: 30px;
+    padding: 30px;
+    text-align: center;
+    background: #172554;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    color: #22d3ee;
+}
